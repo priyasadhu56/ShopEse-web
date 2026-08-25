@@ -1,0 +1,44 @@
+.products-section {
+  width: 100%;
+  padding: 35px 40px;
+  box-sizing: border-box;
+  background: #f3f3f3;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.products-header h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #111;
+}
+
+.products-header a {
+  color: #007185;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.products-grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+
+  gap: 20px;
+
+  width: 100%;
+}
+
+.products-loading {
+  padding: 40px;
+  text-align: center;
+}

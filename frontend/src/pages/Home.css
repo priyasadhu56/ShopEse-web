@@ -1,0 +1,174 @@
+/* Home Page */
+
+.home-page {
+  width: 100%;
+  background: #f3f3f3;
+  min-height: 100vh;
+}
+
+/* Hero */
+
+.hero-section {
+  width: 100%;
+  min-height: 320px;
+  background: linear-gradient(
+    135deg,
+    #e8f4ff,
+    #ffffff
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.hero-content button {
+  background: #ff9900;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background: #ffad33;
+}
+
+/* Products Section */
+
+.products-section {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+  padding: 35px 25px;
+
+  box-sizing: border-box;
+}
+
+.section-header {
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  color: #111;
+  margin: 0;
+}
+
+/* Product Grid */
+
+.products-grid {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(230px, 1fr)
+  );
+
+  gap: 20px;
+
+  width: 100%;
+}
+
+/* Loading */
+
+.loading {
+  min-height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f3f3f3;
+}
+
+.loading h2 {
+  color: #333;
+}
+
+/* Error */
+
+.error-message {
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: #f3f3f3;
+}
+
+.error-message h2 {
+  color: #c40000;
+}
+
+.error-message p {
+  color: #555;
+}
+
+/* No Products */
+
+.no-products {
+  background: white;
+  padding: 40px;
+
+  text-align: center;
+
+  font-size: 18px;
+  color: #555;
+
+  border-radius: 6px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .hero-section {
+    min-height: 260px;
+    padding: 30px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .products-section {
+    padding: 25px 15px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
